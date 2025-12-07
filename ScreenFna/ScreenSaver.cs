@@ -8,6 +8,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using ButtonState = Microsoft.Xna.Framework.Input.ButtonState;
+using Color = Microsoft.Xna.Framework.Color;
+using Rectangle = Microsoft.Xna.Framework.Rectangle;
 
 namespace ScreenSaverFna
 {

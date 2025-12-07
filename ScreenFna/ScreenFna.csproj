@@ -8,4 +8,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y /d  &quot;$(ProjectDir)fnalibs\x64\*.dll&quot; &quot;$(ProjectDir)$(OutDir)&quot;" />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="FNA">
+      <HintPath>..\..\..\FNA\ScreenSaverFna\ScreenSaverFna\FNA.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
