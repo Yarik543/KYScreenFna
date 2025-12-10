@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /y /d  &quot;$(ProjectDir)fnalibs\x64\*.dll&quot; &quot;$(ProjectDir)$(OutDir)&quot;" />
+    <Exec Command="xcopy /y /d  &quot;$(ProjectDir)fnalibs\native\*.dll&quot; &quot;$(ProjectDir)$(OutDir)&quot;" />
   </Target>
 
   <ItemGroup>
